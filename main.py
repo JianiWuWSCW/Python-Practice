@@ -1,11 +1,16 @@
 # Ask the user their name 
 name=input("What's your name?")
 # Greet the user and introduce the quiz
-print("Welcome to the quiz")
+print("Welcome to the quiz",name)
 print("This quiz is about capital cities about the world")
 # Ask the user a question
-input(" What is the capital city of New Zealand?")
+answer=input(" What is the capital city of New Zealand?")
 # Tell the user the answer
+if answer == "Wellington":
+    print("correct")
+else:
+    print("incorrect")
+
 print("Wellington")
 # End the quiz
-input("")
+input("Goodbye!")
