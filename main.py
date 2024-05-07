@@ -8,6 +8,8 @@ answer=input(" What is the capital city of New Zealand?")
 # Tell the user the answer
 if answer == "Wellington":
     print("correct")
+elif answer =="":
+    print("not sure???")
 else:
     print("incorrect")
 
