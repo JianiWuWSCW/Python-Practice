@@ -4,8 +4,8 @@ name=input("What's your name?")
 print("Welcome to the quiz")
 print("This quiz is about capital cities about the world")
 # Ask the user a question
-input("")
+input(" What is the capital city of New Zealand?")
 # Tell the user the answer
-print("")
+print("Wellington")
 # End the quiz
 input("")
