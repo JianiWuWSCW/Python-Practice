@@ -25,7 +25,7 @@ if answer == "Auckland".upper():
     print("correct!")
     score=score+10
 
-elif answer =="":
+elif answer ==""
     print("not sure???")
 else:
     print("incorrect")
@@ -44,7 +44,7 @@ if answer == "a".lower() or answer==a.lower():
     score=score+10
 
 elif answer =="":
-    print("not sure???")
+    print("not sure???") 
     print("Wellington")
 else:
     print("incorrect")
@@ -54,5 +54,5 @@ else:
 # End the quiz
 
 print("Well done {}.You finished the quiz.You final score is{}".format(name,score))
-input("Goodbye!")
+input("Goodbye!") 
 
