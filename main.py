@@ -2,13 +2,22 @@ play="yes"
 
 score=0
 
-
 # Ask the user their name 
 name=input("What's your name?")
 # Greet the user and introduce the quiz
 print("Welcome to the quiz",name)
 print("This quiz is about capital cities about the world")
 
+while True:
+    try:
+
+        tries=input("How many tries do you want for the questions? ")
+        tries=int(tries)
+        break
+    except:
+        print("That's not a number")
+    
+    
 # Ask the user a question
 while play == "yes":
     score=0
@@ -56,10 +65,11 @@ while play == "yes":
     else:
         print("incorrect")
         print("A")
+    
+
 
     print("Well done {}.You finished the quiz.You final score is{}".format(name,score))
     play = input("Do you want to do this quiz again?")
-
 
 
 
