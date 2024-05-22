@@ -12,11 +12,13 @@ while True:
     try:
 
         tries=input("How many tries do you want for the questions? ")
-        tries=int(tries)
+        tries=int(tries) 
         break
     except:
         print("That's not a number")
     
+    GOOD_COMMENTS = ["Way to go!","Keep it up!","Fantastic!"]
+    BAD_COMMENTS = ["Keep trying","Maybe next time","Don't give up"]
     
 # Ask the user a question
 while play == "yes":
@@ -27,12 +29,15 @@ while play == "yes":
     if answer == "Wellington".upper():
         print("correct!")
         score= score+10
+        print(GOOD_COMMENTS[0])
 
     elif answer =="":
         print("not sure???")
+        print(BAD_COMMENTS[0])
     else:
         print("incorrect")
         print("Wellington")
+        print(BAD_COMMENTS[2])
 
 
     answer=input("What is the biggest city of New Zealand?").upper()
@@ -40,12 +45,16 @@ while play == "yes":
     if answer == "Auckland".upper():
         print("correct!")
         score=score+10
+        print(GOOD_COMMENTS[2])
 
     elif answer =="":
         print("not sure???")
+        print(BAD_COMMENTS[0])
     else:
         print("incorrect")
         print("Auckland")
+        print(BAD_COMMENTS[2])
+
 
     QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
     question = "What is the capital city of New Zealand?"
@@ -58,13 +67,16 @@ while play == "yes":
     if answer == "a".lower() or answer==a.lower():
         print("correct!")
         score=score+10
+        print(GOOD_COMMENTS[2])
 
     elif answer =="":
         print("not sure???") 
         print("Wellington")
+        print(BAD_COMMENTS[0])
     else:
         print("incorrect")
         print("A")
+        print(BAD_COMMENTS[1])
     
 
 
