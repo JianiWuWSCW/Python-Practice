@@ -1,6 +1,8 @@
 play="yes"
 
 score=0
+GOOD_COMMENTS = ["Way to go!","Keep it up!","Fantastic!"]
+BAD_COMMENTS = ["Keep trying","Maybe next time","Don't give up"]
 
 # Ask the user their name 
 name=input("What's your name?")
@@ -79,8 +81,7 @@ while play == "yes":
         print("A")
         print(BAD_COMMENTS[1])
     
-    GOOD_COMMENTS = ["Way to go!","Keep it up!","Fantastic!"]
-    BAD_COMMENTS = ["Keep trying","Maybe next time","Don't give up"]
+   
 
     print("Well done {}.You finished the quiz.You final score is{}".format(name,score))
     play = input("Do you want to do this quiz again?")
