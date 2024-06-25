@@ -17,6 +17,7 @@ while True:
 
         tries=input("How many tries do you want for the questions? ")
         tries=int(tries) 
+        
         break
     except:
         print("That's not a number")
@@ -91,4 +92,3 @@ while play == "yes":
 # End the quiz
 
 print("Goodbye!") 
-
